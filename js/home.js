@@ -32,7 +32,7 @@
 			projectNS.angularModule.factory("GetDataService",['$http', function($http) {
 			  return {
 				updateData :  function(type, callback) {	
-					$http.get('/data/response.json')
+					$http.get('data/response.json')
 						 .success(callback)
 						 .error(callback);
 				}
