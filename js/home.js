@@ -32,7 +32,7 @@
 			projectNS.angularModule.factory("GetDataService",['$http', function($http) {
 			  return {
 				updateData :  function(type, callback) {	
-					$http.get('https://dl.dropboxusercontent.com/u/48398666/propertyfinder/data/response.json')
+					$http.get('/data/response.json')
 						 .success(callback)
 						 .error(callback);
 				}
